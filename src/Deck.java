@@ -82,6 +82,11 @@ public class Deck {
      */
     public Card deal() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+        size = size - 1;
+        if(size < 0){
+            return null;
+        }
+        return cards.get(size);
     }
 
     /**
